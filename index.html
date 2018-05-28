@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/numcolor.css">
+</head>
+<body ng-app='myapp'  ng-controller="numcolor">
+    <div class="div1">
+        <div class="div2">
+            <button class="but" ng-class="{'clo':(list.id == 001),'cloo':(list.id == 002),'clooo':(list.id == 003),'cloooo':(list.id == 004),'clooooo':(list.id == 005)}" ng-repeat='list in listData'>
+                <span ng-bind='list.num'></span>
+            </button>
+        </div>
+        <div>
+            <label>数值1：<span ng-bind='listData[0].num'></span></label><br>
+            <label>数值2：<span ng-bind='listData[1].num'></span></label><br>
+            <label>数值3：<span ng-bind='listData[2].num'></span></label><br>
+            <label>数值4：<span ng-bind='listData[3].num'></span></label>
+            <br><br>
+            <lable>尾数1：<br><button style="background:red; width:100px; height:60px;"></button></lable><br>
+            <lable>尾数2：<br><button style="background:yellow; width:100px; height:60px;"></button></lable><br>
+            <lable>尾数3：<br><button style="background:green; width:100px; height:60px;"></button></lable><br>
+            <lable>尾数4：<br><button style="background:blue; width:100px; height:60px;"></button></lable><br>
+            <lable>尾数4+：<br><button style="background:pink; width:100px; height:60px;"></button></lable>
+        </div>
+        <div class="div">
+            <table>
+                <tr>
+                    <td>ID</td>
+                    <td>number</td>
+                </tr>
+                <tr ng-repeat='list in listData'>
+                    <td ng-bind='list.id'></td>
+                    <td ng-bind='list.num'></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <script src="libs/angular.min.js"></script>
+    <script src="libs/angular-cookies.min.js"></script>
+    <script src="js/numcolor.js"></script>
+</body>

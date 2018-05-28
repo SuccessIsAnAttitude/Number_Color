@@ -1,0 +1,44 @@
+*{
+    font-size: 16px;
+}
+.div1{ 
+    position: absolute;
+    text-align: center;
+    width: 80%;
+    height: 550px;
+    margin: 20px 10% 0 10%;
+    border: 1px solid black;
+}
+.div2{
+    position: absolute;
+    width: 40%;
+    height: 100%;
+    text-align: center;
+}
+.div{
+    width: 30%;
+    height: 100%;
+    text-align: left;
+    float: right;
+    margin-top: -420px;
+}
+.but{
+    margin: 30px auto;
+    width: 120px;
+    height: 70px;
+}
+.clo{
+    background: red;
+}
+.cloo{
+    background: yellow;
+}
+.clooo{
+    background: green;
+}
+.cloooo{
+    background: blue;
+}
+.clooooo{
+    background: pink;
+}
